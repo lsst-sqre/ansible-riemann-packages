@@ -1,0 +1,5 @@
+---
+# Configure the Riemann service.
+
+- name: Start the Riemann service.
+  service: name=riemann state=started

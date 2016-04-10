@@ -1,0 +1,14 @@
+---
+# Install Riemann packages on debian based distributions.
+
+- name: Uninstall existing Riemann package.
+  apt: name=riemann state=absent
+
+- name: Get Riemann deb file.
+  get_url: url=https://aphyr.com/riemann/riemann_0.2.10_all.deb dest=/tmp/riemann_0.2.10_all.deb checksum=sha256:ae3597924a327031d8be3c1d7a466b6db014046c46318a634f357951a8033917
+
+- name: Install Riemann packages.
+  apt: deb=/tmp/riemann_0.2.10_all.deb
+
+- name: Configure Riemann.
+  include: riemann.yml
