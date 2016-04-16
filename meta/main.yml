@@ -2,7 +2,7 @@ galaxy_info:
   author: J. Matt Peterson
   description: LSST SQuaRE's Riemann packages.
   company: LSST SQuaRE
-  issue_tracker_url: https://github.com/lsst-sqre/ansible-riemann/issues
+  issue_tracker_url: https://github.com/lsst-sqre/ansible-riemann-packages/issues
   license: MIT
   min_ansible_version: 2.0
   platforms:
