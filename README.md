@@ -1,7 +1,7 @@
-ansible-riemann
-===============
+ansible-riemann-packages
+========================
 
-[![Build Status](https://travis-ci.org/jmatt/ansible-riemann.svg?branch=master)](https://travis-ci.org/jmatt/ansible-riemann)
+[![Build Status](https://travis-ci.org/jmatt/ansible-riemann-packages.svg?branch=master)](https://travis-ci.org/jmatt/ansible-riemann-packages)
 
 Install packages for Riemann deployment for LSST SQuaRE infrastructure.
 
@@ -10,9 +10,9 @@ Example Playbook
 
     - hosts: server
       roles:
-         - { role: jmatt.riemann }
+         - { role: jmatt.riemann-packages }
 
 License
 -------
 
-See the [LICENSE file](/LICENSE).
+MIT License. See the [LICENSE file](https://github.com/lsst-sqre/ansible-riemann-packages/blob/master/LICENSE).
