@@ -15,4 +15,4 @@ Example Playbook
 License
 -------
 
-MIT License. See the [LICENSE file](https://github.com/lsst-sqre/ansible-riemann-packages/blob/master/LICENSE).
+The MIT License. See the [LICENSE file](https://github.com/lsst-sqre/ansible-riemann-packages/blob/master/LICENSE).
