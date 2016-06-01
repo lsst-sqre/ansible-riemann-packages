@@ -1,0 +1,12 @@
+---
+# tasks file for riemann-packages
+
+- name: Stop the Riemann service.
+  service: name=riemann state=stopped
+  ignore_errors: true
+
+- include: redhat.yml
+  when: ansible_os_family == 'RedHat'
+
+- include: debian.yml
+  when: ansible_os_family == 'Debian'
