@@ -5,7 +5,7 @@
   yum: name=riemann state=absent
 
 - name: Install Riemann from rpm.
-  yum: name=https://aphyr.com/riemann/riemann-0.2.10-1.noarch.rpm state=present
+  yum: name=https://aphyr.com/riemann/riemann-0.2.11-1.noarch.rpm state=present
 
 - name: Reload the service daemon.
   command: systemctl daemon-reload
