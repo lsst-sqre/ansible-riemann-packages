@@ -5,10 +5,10 @@
   apt: name=riemann state=absent
 
 - name: Get Riemann deb file.
-  get_url: url=https://aphyr.com/riemann/riemann_0.2.10_all.deb dest=/tmp/riemann_0.2.10_all.deb checksum=sha256:ae3597924a327031d8be3c1d7a466b6db014046c46318a634f357951a8033917
+  get_url: url=https://aphyr.com/riemann/riemann_0.2.11_all.deb dest=/tmp/riemann_0.2.11_all.deb checksum=sha256:d2e42c0e7c79105e7a88108685aea04a6508084e7cb49cefddf44108ab7e1f59
 
 - name: Install Riemann packages.
-  apt: deb=/tmp/riemann_0.2.10_all.deb
+  apt: deb=/tmp/riemann_0.2.11_all.deb
 
 - name: Configure Riemann.
   include: riemann.yml
